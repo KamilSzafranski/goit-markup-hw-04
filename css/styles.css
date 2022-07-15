@@ -59,6 +59,7 @@ body {
 
 .section {
     padding: 94px 0;
+    background-color: var(--photo-bg-color);
 }
 .menu .container > ul {
     padding: 24px 15px;
@@ -72,9 +73,9 @@ body {
     gap: 93px;
 }
 .menu {
+    background-color: var(--white-bg-color);
     font-weight: 500;
     letter-spacing: 0.02em;
-    background: var(--white-bg-color);
     color: var(--text--black-color);
     border-bottom: 1px solid #e4e8ee;
 }
@@ -153,20 +154,16 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-.description {
-    background: var(--white-bg-color);
-}
 
 .text {
     margin-bottom: 94px;
     padding: 0 15px;
     display: flex;
     justify-content: space-around;
-
     column-gap: 30px;
 }
 
-.conteiner-svg {
+.container-svg {
     margin-bottom: 30px;
     padding: 25px 0;
     line-height: 0;
@@ -192,7 +189,7 @@ body {
 .team {
     background-color: var(--team-button-bg-color);
 }
-.team ul {
+.team .container > ul {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -210,14 +207,54 @@ body {
 .team figcaption {
     padding: 30px 0;
 }
-.photo-title {
+.team-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.team-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--icon-grey-color);
+}
+.team-icon:hover,
+.team-icon svg:hover,
+.team-icon:focus,
+.team-icon svg:focus {
+    background-color: var(--button-bg-color);
+    fill: var(--team-button-bg-color);
+
+    cursor: pointer;
+}
+
+.team-icon .photo-title {
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 .team p + p {
+    margin-bottom: 16px;
     color: var(--text-grey-color);
 }
+
+.client-list {
+    display: flex;
+    justify-content: space-around;
+}
+.client-container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
 .footer {
     padding: 60px 0;
     background-color: var(--footer-header-bg-color);
