@@ -245,14 +245,25 @@ body {
     display: flex;
     justify-content: space-around;
 }
-.client-container-icon {
+.client-item {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 92px;
     width: 170px;
+    color: #afb1b8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    cursor: pointer;
+}
+.client-item .icon {
+    fill: currentColor;
+}
+
+.client-item:hover,
+.client-item:focus {
+    color: var(--backligh-color);
+    border-color: var(--backligh-color);
 }
 
 .footer {
@@ -265,8 +276,12 @@ body {
 }
 .footer .container {
     padding: 0 15px;
+    display: flex;
 }
-.footer .container > a {
+.footer-contact {
+    margin-right: 70px;
+}
+.footer-contact > a {
     display: block;
     margin-bottom: 20px;
     color: var(--text-white-color);
@@ -281,7 +296,36 @@ body {
 .footer a:focus {
     color: var(--backligh-color);
 }
+.footer-media {
+    padding-top: 12px;
+}
 
+.footer-media h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.footer-media-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-media-item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer-media-item .icon {
+    fill: currentColor;
+}
+.footer-media-item:hover,
+.footer-media-item:focus {
+    background-color: var(--backligh-color);
+}
 .portfolio {
     background-color: var(--white-bg-color);
     font-size: 16px;
