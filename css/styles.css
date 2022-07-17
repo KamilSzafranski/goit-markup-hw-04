@@ -138,7 +138,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     background-image: linear-gradient(to top, #2f303a66, #2f303a66),
-        url(/goit-markup-hw-04/images/header-bg.jpg);
+        url(../images/header-bg.jpg);
 }
 
 .header button {
@@ -151,6 +151,7 @@ body {
     color: var(--text-white-color);
     background-color: var(--button-bg-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -369,6 +370,7 @@ body {
 .portfolio-photo li {
     flex-basis: calc((1200px - 60px) / 3);
     text-align: left;
+    cursor: pointer;
 }
 .portfolio-photo figure {
     max-width: 370px;
